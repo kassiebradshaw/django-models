@@ -2,7 +2,7 @@
 
 *Author*: Kassie Bradshaw
 
-[Link to my Pull Request](tbd)
+[Link to my Pull Request](https://github.com/kassiebradshaw/django-models/pull/1)
 
 ---
 
@@ -16,66 +16,66 @@ Django has a powerful Object Relational Mapper (ORM) that allows us to persist d
 
 **Model**:
 
-* [ ] Create `snack_tracker_project` project
-* [ ] Create `snacks` app
-* [ ] Add `snacks` app to project
-* [ ] Create `snack` model
-  * [ ] Make sure it extends from proper base class
-  * [ ] Add `name` as a CharField with maximum length of 64 characters
-  * [ ] Add `purchaser` ForeignKey related to Django's built-in user model with CASCADE delete option.
+* [x] Create `snack_tracker_project` project
+* [x] Create `snacks` app
+* [x] Add `snacks` app to project
+* [x] Create `snack` model
+  * [x] Make sure it extends from proper base class
+  * [x] Add `name` as a CharField with maximum length of 64 characters
+  * [x] Add `purchaser` ForeignKey related to Django's built-in user model with CASCADE delete option.
     * `from django.contrib.auth import get_user_model`
-  * [ ] Add `description` TextField
-* [ ] Add model to admin
-* [ ] Modify `snack` model to have user-friendly display in admin
-* [ ] Create migrations and migrate data
-* [ ] Create a super user
-* [ ] Run development server
-* [ ] Add a few snacks via Admin panel
-* [ ] Create another user and more snacks via Admin panel
+  * [x] Add `description` TextField
+* [x] Add model to admin
+* [x] Modify `snack` model to have user-friendly display in admin
+* [x] Create migrations and migrate data
+* [x] Create a super user
+* [x] Run development server
+* [x] Add a few snacks via Admin panel
+* [x] Create another user and more snacks via Admin panel
 * [ ] Confirm snacks behave as expected with proper name, purchaser and description
 
 **Views for Snacks App**:
 
-* [ ] Create `SnackListView`
-  * [ ] Extend `ListView`
-  * [ ] Give a template of `snack_list.html`
-  * [ ] Associate `Snack` model
+* [x] Create `SnackListView`
+  * [x] Extend `ListView`
+  * [x] Give a template of `snack_list.html`
+  * [x] Associate `Snack` model
 
-* [ ] Update URL patterns for project
-  * [ ] Empty path should `include` snacks.urls
+* [x] Update URL patterns for project
+  * [x] Empty path should `include` snacks.urls
 
-* [ ] Update Snacks app urls
-  * [ ] Empty sub-path should be handled by SnackListView
-    * [ ] Don't forget to use `as_view()`
+* [x] Update Snacks app urls
+  * [x] Empty sub-path should be handled by SnackListView
+    * [x] Don't forget to use `as_view()`
 
-* [ ] Add detail view
-  * [ ] Link `snack_detail.html` template
-  * [ ] Associate `Snack` model
+* [x] Add detail view
+  * [x] Link `snack_detail.html` template
+  * [x] Associate `Snack` model
 
-* [ ] Update app urlpatterns to handle detail view
-  * [ ] Account for primary key in url
-  * [ ] Path would look like `localhost:8000/1/` to get to snack with id of 1
+* [x] Update app urlpatterns to handle detail view
+  * [x] Account for primary key in url
+  * [x] Path would look like `localhost:8000/1/` to get to snack with id of 1
 
 **Templates**:
 
-* [ ] Add `templates` folder in root of project
-  * [ ] Register `templates` folder in project settings TEMPLATES section
+* [x] Add `templates` folder in root of project
+  * [x] Register `templates` folder in project settings TEMPLATES section
 
-* [ ] Create `base.html` ancestor template
-  * [ ] Add main html document
-  * [ ] Use `Django Templating Language` to allow child templates to insert content
+* [x] Create `base.html` ancestor template
+  * [x] Add main html document
+  * [x] Use `Django Templating Language` to allow child templates to insert content
 
-* [ ] Create `snack_list.html` template
-  * [ ] Extend base template
-  * [ ] Use `Django Templating Language` to display each snack's name
+* [x] Create `snack_list.html` template
+  * [x] Extend base template
+  * [x] Use `Django Templating Language` to display each snack's name
 
-* [ ] View home page (aka snack_list) and confirm snacks showing properly
-* [ ] Create `snack_detail.html` template
-  * [ ] Template should extend base
-  * [ ] Content should display snack's name, description, and purchaser.
+* [x] View home page (aka snack_list) and confirm snacks showing properly
+* [x] Create `snack_detail.html` template
+  * [x] Template should extend base
+  * [x] Content should display snack's name, description, and purchaser.
 
-* [ ] Add link in snack_list template to related detail page for each snack
-* [ ] Add a link back to Home (aka snack_list) page from detail page.
+* [x] Add link in snack_list template to related detail page for each snack
+* [x] Add a link back to Home (aka snack_list) page from detail page.
 
 ---
 
@@ -106,4 +106,3 @@ Django has a powerful Object Relational Mapper (ORM) that allows us to persist d
 * [ ] Add multiple models
 * [ ] Use an alternate test runner
 * [ ] Add more advanced fields to the models, e.g. created time stamp
-
