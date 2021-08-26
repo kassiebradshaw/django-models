@@ -81,11 +81,11 @@ Django has a powerful Object Relational Mapper (ORM) that allows us to persist d
 
 ## User Acceptance Tests
 
-* [ ] Test snack pages
-  * [ ] **NOTE** - make sure test extends `TestCase` instead of `SimpleTestCase` used in previous class
-  * [ ] Verify status code
-  * [ ] Verify correct template use
-  * [ ] Use URL *name* instead of hard coded path
+* [x] Test snack pages
+  * [x] **NOTE** - make sure test extends `TestCase` instead of `SimpleTestCase` used in previous class
+  * [x] Verify status code
+  * [x] Verify correct template use
+  * [x] Use URL *name* instead of hard coded path
     * **TIP**: `django.urls.reverse` will help with that
 
 * [ ] We can't easily test `SnackDetailView` just yet.
@@ -102,7 +102,7 @@ Django has a powerful Object Relational Mapper (ORM) that allows us to persist d
   * [ ] Load static css in base.html file
 
 * [ ] Test SnackDetailView
-* [ ] Test Snack model
+* [x] Test Snack model
 * [ ] Add multiple models
-* [ ] Use an alternate test runner
+* [x] Use an alternate test runner
 * [ ] Add more advanced fields to the models, e.g. created time stamp
